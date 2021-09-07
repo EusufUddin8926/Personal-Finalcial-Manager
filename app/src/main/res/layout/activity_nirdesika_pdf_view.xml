@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NirdesikaPdfView"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/viewReportPageToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/toolbar"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/toolbar"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backBtnnirdesika"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/arrow_back_icon"
+                android:elevation="4dp"
+                android:minWidth="32dp"
+                android:minHeight="32dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/viewReportHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="17dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="@string/aikornirdesika"
+                android:textColor="@color/white"
+
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id = "@+id/swiperefreshlayout"
+        android:layout_width = "match_parent"
+
+        android:layout_height = "match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+            <WebView
+                android:layout_width="wrap_content"
+                android:id="@+id/webview"
+                android:layout_height="wrap_content">
+            </WebView>
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:id="@+id/progressbarnr"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+</LinearLayout>

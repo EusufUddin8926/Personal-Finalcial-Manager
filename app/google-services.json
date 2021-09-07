@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "499799736010",
+    "project_id": "a-personal-financial-man-c90ba",
+    "storage_bucket": "a-personal-financial-man-c90ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499799736010:android:3299dacbf0eebf201b3e33",
+        "android_client_info": {
+          "package_name": "com.example.personalfinancialmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499799736010-nk4pn029f614fe54bh69rl4je32frap6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLBpd2g_XQY7rdy5iSnQDLTyiCQ8sZC60"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499799736010-nk4pn029f614fe54bh69rl4je32frap6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

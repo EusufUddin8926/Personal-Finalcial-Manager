@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    -<style name="custom_fab">
+
+    <item name="android:background">@drawable/fab_label_background</item>
+
+    <item name="android:textColor">@color/white</item>
+
+</style>
+
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="foating_btn_diyeci">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/dp_debo</item>
+    </style>
+
+    <style name="Divider_2">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#DED9EA</item>
+    </style>
+    <style name="Divider_1">
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#CCCCCC</item>
+    </style>
+
+
+
+
+
+
+</resources>

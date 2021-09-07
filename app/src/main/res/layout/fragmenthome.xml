@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12.1"
+    android:background="@color/theme_dashboard_bg"
+    tools:context=".MainActivity">
+
+
+
+        <LinearLayout
+            android:layout_weight="2.9"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp">
+
+                <ImageView
+
+                    android:id="@+id/amarhisabId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/amarhisab">
+
+                </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+                <View
+                    style="@style/Divider_2"
+                    />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:background="@drawable/backgroundbg_radius4side"
+            android:layout_weight="9"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingRight="15dp"
+                                            android:orientation="vertical"
+
+                                            >
+
+
+                                                <LinearLayout
+
+                                                    android:id="@+id/denaPawnaId"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="12dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/ic_denapawna_bg"
+                                                    android:gravity="center"
+                                                    android:padding="15dp">
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical">
+
+                                                                <androidx.appcompat.widget.AppCompatImageView
+                                                                    android:layout_width="100dp"
+                                                                    android:layout_height="100dp"
+                                                                    android:layout_gravity="center"
+                                                                    android:layout_weight="0"
+                                                                    android:background="@drawable/ic_transaction"
+                                                                    android:elevation="4dp" />
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_gravity="center"
+                                                                    android:paddingTop="3dp"
+                                                                    android:text="@string/denapawnaCT"
+                                                                    android:textColor="@color/white"
+                                                                    android:textSize="22sp"
+                                                                    tools:ignore="RtlSymmetry" />
+
+                                                        </LinearLayout>
+
+
+
+                                                </LinearLayout>
+
+
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingLeft="15dp">
+
+
+                                                <LinearLayout
+                                                    android:id="@+id/jomaKhorocId"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="12dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/ic_jomakhoroch_bg"
+                                                    android:gravity="center"
+                                                    android:padding="15dp">
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:orientation="vertical">
+
+                                                                <androidx.appcompat.widget.AppCompatImageView
+                                                                    android:layout_width="100dp"
+                                                                    android:layout_height="100dp"
+                                                                    android:layout_gravity="center_vertical"
+                                                                    android:layout_marginTop="0dp"
+                                                                    android:layout_marginBottom="0dp"
+
+                                                                    android:layout_weight="0"
+                                                                    android:background="@drawable/ic_jomakhoroch"
+                                                                    android:elevation="4dp" />
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_gravity="center"
+                                                                    android:paddingTop="3dp"
+                                                                    android:text="@string/jomakhorocCT"
+                                                                    android:textColor="@color/white"
+                                                                    android:textSize="22sp"
+                                                                    tools:ignore="RtlSymmetry" />
+
+                                                        </LinearLayout>
+
+                                                </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_marginTop="25dp"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingRight="15dp"
+
+                                            >
+
+
+                                                <LinearLayout
+                                                    android:id="@+id/sonchoyId"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/ic_sanchoy_bg"
+                                                    android:gravity="center"
+                                                    android:padding="15dp">
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:orientation="vertical">
+
+                                                                <androidx.appcompat.widget.AppCompatImageView
+                                                                    android:layout_width="100dp"
+                                                                    android:layout_height="100dp"
+                                                                    android:layout_gravity="center_vertical"
+                                                                    android:layout_marginTop="0dp"
+                                                                    android:layout_marginBottom="0dp"
+
+                                                                    android:layout_weight="0"
+                                                                    android:background="@drawable/ic_saving"
+                                                                    android:elevation="4dp" />
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_gravity="center"
+                                                                    android:paddingTop="3dp"
+                                                                    android:text="@string/sonchoyCT"
+                                                                    android:textColor="@color/white"
+                                                                    android:textSize="22sp"
+                                                                    tools:ignore="RtlSymmetry" />
+
+                                                        </LinearLayout>
+
+
+                                                </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingLeft="15dp">
+
+
+                                                <LinearLayout
+                                                    android:id="@+id/memoRoshidId"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/ic_memo_bg"
+                                                    android:gravity="center"
+                                                    android:padding="15dp">
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:orientation="vertical">
+
+                                                                <androidx.appcompat.widget.AppCompatImageView
+                                                                    android:layout_width="100dp"
+                                                                    android:layout_height="100dp"
+                                                                    android:layout_gravity="center"
+                                                                    android:layout_marginTop="0dp"
+                                                                    android:layout_marginBottom="0dp"
+
+                                                                    android:layout_weight="0"
+                                                                    android:background="@drawable/ic_memo"
+                                                                    android:elevation="4dp" />
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_gravity="center"
+                                                                    android:paddingTop="3dp"
+                                                                    android:text="@string/memoroshidCT"
+                                                                    android:textColor="@color/white"
+                                                                    android:textSize="22sp"
+                                                                    tools:ignore="RtlSymmetry" />
+
+                                                        </LinearLayout>
+
+                                                </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:weightSum="2">
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingRight="15dp"
+
+                                            >
+
+
+                                                <LinearLayout
+                                                    android:id="@+id/aiKorId"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/ic_aykor_bg"
+                                                    android:gravity="center"
+                                                    android:padding="15dp">
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:orientation="vertical">
+
+                                                                <androidx.appcompat.widget.AppCompatImageView
+                                                                    android:layout_width="100dp"
+                                                                    android:layout_height="100dp"
+                                                                    android:layout_gravity="center_vertical"
+                                                                    android:layout_marginTop="0dp"
+                                                                    android:layout_marginBottom="0dp"
+
+                                                                    android:layout_weight="0"
+                                                                    android:background="@drawable/ic_aikor"
+                                                                    android:elevation="4dp" />
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_gravity="center"
+                                                                    android:paddingTop="3dp"
+                                                                    android:text="@string/aykorCT"
+                                                                    android:textColor="@color/white"
+                                                                    android:textSize="22sp"
+                                                                    tools:ignore="RtlSymmetry" />
+
+                                                        </LinearLayout>
+
+
+                                                </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingLeft="15dp">
+
+
+                                                <LinearLayout
+                                                    android:id="@+id/othersId"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/ic_onnono_bg"
+                                                    android:gravity="center"
+                                                    android:padding="15dp">
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:orientation="vertical">
+
+                                                                <androidx.appcompat.widget.AppCompatImageView
+                                                                    android:layout_width="100dp"
+                                                                    android:layout_height="100dp"
+                                                                    android:layout_gravity="center_vertical"
+                                                                    android:layout_marginTop="0dp"
+                                                                    android:layout_marginBottom="0dp"
+
+                                                                    android:layout_weight="0"
+                                                                    android:background="@drawable/ic_window_of_four_rounded_squares"
+                                                                    android:elevation="4dp" />
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_gravity="center"
+                                                                    android:paddingTop="3dp"
+                                                                    android:text="@string/annoannoCT"
+                                                                    android:textColor="@color/white"
+                                                                    android:textSize="22sp"
+                                                                    tools:ignore="RtlSymmetry" />
+
+                                                        </LinearLayout>
+
+
+                                                </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                </ScrollView>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+                android:text="ব্যক্তিগত হিসাবের নিত্যসঙ্গী | @amrhisab_2021"/>
+
+
+</LinearLayout>
+
+
+
+
+

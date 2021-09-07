@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/viewReportPageToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/toolbar"
+        android:elevation="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/toolbar"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backBtnSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/arrow_back_icon"
+                android:elevation="4dp"
+                android:minWidth="32dp"
+                android:minHeight="32dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/viewReportHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="17dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="@string/nav_settings"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:background="@color/theme_dashboard_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ST_delete_data"
+            android:paddingStart="30dp"
+            android:fontFamily="@font/ganja_mj"
+            android:layout_marginTop="40dp"
+            android:textColor="#4E4747"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/ST_denapawna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ST_denapawnaCT"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/ganja_mj"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/ic_nav_borrow" />
+        <TextView
+            android:id="@+id/ST_jomakhoroch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ST_jomakhorocCT"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/ganja_mj"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/ic_nav_rc" />
+
+        <TextView
+            android:id="@+id/ST_sonchoy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ST_sonchoyCT"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/ganja_mj"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/ic_nav_savings" />
+
+        <TextView
+            android:id="@+id/ST_memoroshid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ST_memoroshidCT"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/ganja_mj"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/ic_nav_memo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ST_note"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/ganja_mj"
+            android:textColor="#F13F3F"
+            android:textSize="12sp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

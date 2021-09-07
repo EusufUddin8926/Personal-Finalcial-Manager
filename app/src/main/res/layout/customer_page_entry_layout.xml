@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5.0"
+
+            android:padding="2dp"
+            android:gravity="center_vertical"
+            android:background="@color/theme_dashboard_bg"
+            >
+
+            <TextView
+                android:id="@+id/customerFragmentDateColumn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tl_date"
+                android:textSize="16sp"
+                android:layout_weight="1.6"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                />
+
+            <TextView
+                android:id="@+id/customerFragmentYouGave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/Taka_zero"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/customerFragmentYouGot"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/Taka_zero"
+                android:textSize="16sp"
+                android:paddingRight="5dp"
+                android:layout_weight="1.6"
+                android:textAlignment="textEnd"
+                />
+                <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/three_dot"
+                android:textSize="16sp"
+                android:layout_weight="0.2"
+                android:textAlignment="textEnd"
+                />
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>

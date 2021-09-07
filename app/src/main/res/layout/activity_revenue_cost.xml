@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_dashboard_bg_deep"
+    tools:context=".RevenueCost"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/viewReportPageToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/toolbar"
+        android:elevation="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@color/toolbar"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backBtnJK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arrow_back_icon"
+                android:layout_marginStart="5dp"
+                android:padding="10dp"
+                android:minWidth="32dp"
+                android:minHeight="32dp"
+                android:elevation="4dp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/viewReportHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="17dp"
+                android:layout_weight="1"
+                android:text="@string/jomakhorocCT"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:paddingStart="10dp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        android:elevation="0dp"
+        app:cardBackgroundColor="@color/theme_dashboard_bg_deep"
+        android:id="@+id/cardviewId"
+        android:layout_below="@+id/viewReportPageToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:elevation="0dp"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_firsttbg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/sutonnymj"
+                            android:text="@string/transactions_revenue"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/jomaticon">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_secoundtbg">
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:id="@+id/totalrevenueTextViewTransaction"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:text="@string/tl_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    >
+                    <LinearLayout
+                        android:gravity="center"
+                        android:background="@drawable/ic_firsttcbg"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/sutonnymj"
+                            android:layout_gravity="center"
+                            android:textSize="18sp"
+                            android:text="@string/transactions_expense"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_expenseticon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_secoundtcbg">
+
+                        <TextView
+                            android:id="@+id/totalexpenseTextViewTransaction"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:text="@string/tl_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_netbalancebg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_walleticon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="@string/transactions_net_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/netBalance"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:text="@string/tl_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/backgroundbg_radius_top2side"
+        android:layout_below="@id/cardviewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/headerlayoutId"
+            android:layout_below="@id/cardviewId"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:weightSum="4.2"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:padding="8dp"
+                >
+
+                <TextView
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transactions_total"
+                    android:paddingStart="10dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1.2"
+                >
+
+                <TextView
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transactions_revenue"
+                    android:textColor="@color/green"
+                    android:paddingStart="10dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:padding="8dp"
+                >
+
+                <TextView
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transactions_expense"
+                    android:textColor="@color/red"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewReportListRecycler"
+            tools:listitem="@layout/revenuecost_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerlayoutId"
+
+            android:background="@android:color/background_light"
+            android:padding="4dp"
+            android:scrollbars="vertical" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_gravity="end"
+        app:fab_labelStyle= "@style/custom_fab"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/pink_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:fab_colorNormal="@color/pink"
+        app:fab_colorPressed="@color/pink_pressed">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            app:fab_title="@string/jp_add_revenue"
+            app:fab_icon="@drawable/ic_revenue"
+            android:id="@+id/revenueId"
+            app:fabSize="mini"
+            app:fab_colorPressed="@color/blue_semi_transparent_pressed"
+            app:fab_colorNormal="@color/blue_semi_transparent_pressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            app:fab_title="@string/jp_add_expense"
+
+            app:fab_icon="@drawable/ic_expense"
+            android:id="@+id/expenseId"
+            app:fabSize="mini"
+            app:fab_colorPressed="@color/blue_semi_transparent_pressed"
+            app:fab_colorNormal="@color/blue_semi_transparent_pressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+
+</RelativeLayout>

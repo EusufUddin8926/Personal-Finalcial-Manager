@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/nav_Home"
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_nav_home"/>
+
+    <item
+        android:title="@string/pp__profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_nav_user"/>
+
+    <item
+        android:title="@string/denapawnaCT"
+        android:id="@+id/denapawna"
+        android:icon="@drawable/ic_nav_borrow"/>
+    <item
+        android:title="@string/jomakhorocCT"
+        android:id="@+id/jomaK"
+        android:icon="@drawable/ic_nav_rc"/>
+    <item
+        android:title="@string/sonchoyCT"
+        android:id="@+id/soncoy"
+        android:icon="@drawable/ic_nav_savings"/>
+    <item
+        android:title="@string/memoroshidCT"
+        android:id="@+id/memoR"
+        android:icon="@drawable/ic_nav_memo"/>
+    <item
+        android:title="@string/nav_settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_nav_settings">
+
+
+    </item>
+
+    <item
+        android:title="@string/nav_about_us"
+        android:id="@+id/about"
+        android:icon="@drawable/ic_nav_about"/>
+    <item
+        android:title="@string/nav_logout"
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_nav_exit"/>
+
+</menu>

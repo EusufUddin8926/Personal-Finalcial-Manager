@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerYouGavePage"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/toolbar_top"
+            android:id="@+id/youGavePageToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backBtnYouGavePage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arrow_back_icon"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="12dp"
+                android:minWidth="32dp"
+                android:minHeight="32dp"
+                android:elevation="4dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                />
+
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/receiverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cp_Customer_DemoName"
+                android:textSize="15sp"
+                android:paddingStart="3dp"
+                android:paddingEnd="0dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to_customer_page"
+                android:padding="1dp"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:paddingStart="3dp"
+                android:paddingEnd="0dp"
+                />
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="৳"
+                android:padding="1dp"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:paddingStart="3dp"
+                android:paddingEnd="0dp"
+                />
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/youGaveAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "@string/_0"
+                android:padding="1dp"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:paddingStart="3dp"
+                android:paddingEnd="0dp"
+                />
+
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_gave_customer_page_heading"
+                android:padding="1dp"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:paddingStart="3dp"
+                android:paddingEnd="0dp"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+
+            android:id="@+id/firstrelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/youGavePageToolbar"
+            android:background="@drawable/add_group_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/backgroundbg_radius4side"
+                android:orientation="vertical">
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="@string/dp_kototakadilam"
+                    android:textColorHint="@color/grey"
+                    app:boxStrokeColor="@color/toolbar"
+                    app:boxStrokeWidth="1dp"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="8"
+                    app:endIconMode="clear_text"
+                    app:helperTextTextColor="#E47C7C7C"
+                    app:hintTextColor="@color/toolbar_top"
+                    app:startIconDrawable="@drawable/money">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/enterAmountUGavePage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="@string/dp_biboron"
+                    android:textColorHint="@color/grey"
+                    app:boxStrokeColor="@color/toolbar_top"
+                    app:boxStrokeWidth="1dp"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="150"
+                    app:endIconMode="clear_text"
+                    app:helperTextTextColor="#E47C7C7C"
+                    app:hintTextColor="@color/toolbar_top"
+                    app:startIconDrawable="@drawable/ic_noteicon">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/enterNoteUGavePage"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:inputType="text"
+                        android:maxLength="150" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/border_shape"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/selectdateId"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/setDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:hint="mm-dd-yy"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/datepickerId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="10dp"
+
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/ic_calender">
+
+                        </ImageView>
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_below="@+id/firstrelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/youGaveSaveBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_save_btn"
+                    android:text="@string/songrokkhonkorun"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:paddingLeft="30dp"
+                    android:textSize="20sp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

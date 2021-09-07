@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".AikorDetails">
+
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/viewReportPageToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/toolbar"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/toolbar"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backBtnaikordetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/arrow_back_icon"
+                android:elevation="4dp"
+                android:minWidth="32dp"
+                android:minHeight="32dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/viewReportHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="17dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="@string/aikordetails"
+                android:textColor="@color/white"
+
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarStyle="insideInset"
+            android:padding="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               android:padding="3dp">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_income_tax" />
+
+                <TextView
+                    android:id="@+id/aikortittleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"
+                    android:maxLines="3"
+                    android:text="Aikor Tittle"
+                    android:textColor="#3E8562"
+                    android:textIsSelectable="true"
+                    android:textSize="30sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/aikordescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:autoLink="all"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="10dp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:text="@string/aikor_return"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp">
+
+                </TextView>
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>

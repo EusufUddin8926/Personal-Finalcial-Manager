@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/singleItemId"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/ic_aikor_layout"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/aikordhoronId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLines="2"
+        android:text="@string/aikor_type"
+        android:textStyle="bold"
+        android:fontFamily="@font/sutonnymj"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>
+

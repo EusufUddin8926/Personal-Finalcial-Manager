@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#E10000</color>
+    <color name="blue">#0000FF</color>
+    <color name="transp">#80000000</color>
+
+
+    <color name="green">#21E43C</color>
+    <color name="grey">#828080</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="table_border">#0C0B0B</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="transaction_middle">#E9E9E9</color>
+    <color name="transaction_total">#F3EBEB</color>
+
+
+    <color name="toolbar">#3881FE</color>
+    <color name="toolbar_top">#1D6EF8</color>
+    <color name="theme_dashboard_bg">#EEF7FF</color>
+    <color name="theme_dashboard_bg_deep">#D6EBFE</color>
+    <color name="Customer_text_color">#462CBE</color>
+
+    <color name="dp_pabo">#09A906</color>
+    <color name="dp_debo">#FC5E1A</color>
+    <color name="dp_porishid">#1D6EF8</color>
+    <color name="dp_addcustomer_fab_normal">#323e48</color>
+    <color name="dp_contact">#323E48</color>
+    <color name="add_cuss_btnbg">#707070</color>
+    <color name="savingsDB_bg">#aa32ff</color>
+
+    <color name="startblue">#09c6df</color>
+
+</resources>

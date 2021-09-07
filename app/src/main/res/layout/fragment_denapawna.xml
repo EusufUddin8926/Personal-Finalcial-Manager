@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_dashboard_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_dashboard_bg"
+        android:orientation="vertical"
+        android:paddingBottom="5dp">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dp_dashboard_bg"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:weightSum="2.02">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dp_pabo_bg"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/ganja_mj"
+                        android:paddingStart="5dp"
+                        android:text="@string/dp_mot_pabo"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        app:drawableLeftCompat="@drawable/denapawna_arrow_down"
+                        tools:ignore="RtlSymmetry" />
+
+
+                    <TextView
+                        android:id="@+id/uWillGiveTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/Taka_zero"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dp_debo_bg"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/ganja_mj"
+                        android:paddingStart="5dp"
+                        android:text="@string/dp_mot_debo"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        app:drawableLeftCompat="@drawable/denapawna_arrow_up"
+                        tools:ignore="RtlSymmetry"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/uWillGetTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/Taka_zero"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/dp_transactions_net_balance"
+                android:textColor="@color/white"
+                android:paddingTop="8dp"
+                android:fontFamily="@font/sutonnymj"
+                android:textStyle="bold"
+                android:textSize="26sp" />
+            <TextView
+                android:id="@+id/dpnetbalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Taka_zero"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:paddingTop="5dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="0dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <View style="@style/Divider_1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/searchCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="@string/dp_seachbox_hints"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:iconifiedByDefault="false"
+        android:layout_marginTop="3dp"
+        android:elevation="4dp"
+        android:queryBackground="@android:color/transparent"
+        android:searchIcon="@drawable/search_icon_custom"
+        android:closeIcon="@drawable/close"
+        android:background="@drawable/searchview_bg"
+        android:layout_marginBottom="8dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/backgroundbg_radius4side"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:padding="4dp"
+            android:paddingStart="20dp"
+            android:text="@string/dp_lenden_talika"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="end"
+           android:paddingEnd="10dp"
+           android:layout_weight="1">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/dp_pabo"
+               android:textSize="20sp"
+               android:paddingTop="4dp"
+               android:paddingBottom="4dp"
+               android:textAlignment="textEnd"
+               android:textColor="@color/dp_pabo"/>
+
+           <TextView
+               android:id="@+id/padding"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:paddingTop="4dp"
+               android:paddingBottom="4dp"
+               android:text="@string/dp_mid_slash"
+               android:textAlignment="center"
+               android:textColor="@color/black"
+               android:textSize="20sp" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/dp_debo"
+               android:textSize="20sp"
+               android:paddingTop="4dp"
+               android:paddingBottom="4dp"
+               android:textAlignment="textStart"
+               android:paddingEnd="20dp"
+               android:textColor="@color/dp_debo"/>
+       </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/customerListRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundbg_radius4side"
+        android:padding="4dp"
+        android:paddingTop="0dp"
+        tools:listitem="@layout/customer_list_view"
+        android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

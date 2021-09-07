@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddNewCustomerPage">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/addNewCustomerToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/toolbar"
+                android:elevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@color/toolbar"
+                    android:weightSum="8">
+
+
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/backBtnNewCustomer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/arrow_back_icon"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"/>
+
+                    <TextView
+                        android:id="@+id/textAddNewCustomer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text="@string/dp_add_customer"
+                        android:textColor="@color/white"
+                        android:paddingStart="25dp"
+                        android:textAlignment="viewStart"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </com.google.android.material.appbar.MaterialToolbar>
+
+            <RelativeLayout
+                android:id="@+id/firstrelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewReportPageToolbar"
+                android:background="@drawable/add_group_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/backgroundbg_radius4side"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeColor="@color/toolbar"
+                        app:boxStrokeWidth="1dp"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:hint="@string/customer_name"
+                        android:textColorHint="@color/grey"
+                        app:hintTextColor="@color/toolbar_top"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="20"
+
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:startIconDrawable="@drawable/add_perseon"
+                        app:endIconMode="clear_text"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/customer_name_add_cust"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:textSize="20sp"
+                            android:maxLength="20"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeColor="@color/toolbar"
+                        app:boxStrokeWidth="1dp"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:hint="@string/phone_number"
+                        android:textColorHint="@color/grey"
+                        app:hintTextColor="@color/toolbar_top"
+                        app:helperText="@string/cp_example_Phone"
+                        app:helperTextTextColor="#E47C7C7C"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="11"
+                        app:endIconMode="clear_text"
+                        android:layout_marginTop="10dp"
+                        app:prefixText="+88"
+                        app:prefixTextColor="@color/black"
+                        app:startIconDrawable="@drawable/ic_baseline_phone_24"
+
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/customer_phone_number_add_cust"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxLength="12"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeColor="@color/toolbar"
+                        app:boxStrokeWidth="1dp"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:hint="@string/customer_address"
+                        android:textColorHint="@color/grey"
+                        app:hintTextColor="@color/toolbar_top"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="50"
+                        app:endIconMode="clear_text"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:startIconDrawable="@drawable/ic_add_location"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/customer_address_add_cust"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:inputType="textMultiLine"
+                            android:maxLength="51"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_below="@+id/firstrelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                >
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/addNewCustomerSaveBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/ic_save_btn"
+                        android:text="@string/dp_addcustomer_save_btn"
+                        android:textSize="20sp"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/white"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
