@@ -12,7 +12,7 @@ https://drive.google.com/drive/folders/1fyKKX4m0tlMyV2ORvE2GxMsupX_jgKci?usp=sha
 
 ### Database Design
 
-![1_page-0001](https://user-images.githubusercontent.com/68120268/133385581-2c2ec00a-64e2-48c6-a6c9-2d9f28fb3f8d.jpg)
+![Firebase Real_page-0001](https://user-images.githubusercontent.com/68120268/133391322-30754b9f-9df2-4a2f-9641-db207773eb5a.jpg)
 
 
 ### Video Demonstration
