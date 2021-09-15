@@ -9,11 +9,7 @@ https://drive.google.com/drive/folders/1fyKKX4m0tlMyV2ORvE2GxMsupX_jgKci?usp=sha
 
 ![Doc2_page-00011](https://user-images.githubusercontent.com/68120268/133377208-1a3137b0-2c38-497d-a5ad-54e5215a7838.jpg)
 
-![Doc2_page-00011](https://user-images.githubusercontent.com/68120268/133377208-1a3137b0-2c38-497d-a5ad-54e5215a7838.jpg)
 
-![Doc2_page-00011](https://user-images.githubusercontent.com/68120268/133377208-1a3137b0-2c38-497d-a5ad-54e5215a7838.jpg)
-
-![Doc2_page-00011](https://user-images.githubusercontent.com/68120268/133377208-1a3137b0-2c38-497d-a5ad-54e5215a7838.jpg)
 
 
 
