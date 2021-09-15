@@ -17,9 +17,8 @@ https://drive.google.com/drive/folders/1fyKKX4m0tlMyV2ORvE2GxMsupX_jgKci?usp=sha
 
 ### Video Demontration
 
-<p align="center">
 https://user-images.githubusercontent.com/68120268/133386844-8fb036ba-e2fe-4284-9e21-3a80e989a138.mp4
-</p>
+
 
 
 
