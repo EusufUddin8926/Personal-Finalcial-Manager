@@ -15,7 +15,7 @@ https://drive.google.com/drive/folders/1fyKKX4m0tlMyV2ORvE2GxMsupX_jgKci?usp=sha
 ![1_page-0001](https://user-images.githubusercontent.com/68120268/133385581-2c2ec00a-64e2-48c6-a6c9-2d9f28fb3f8d.jpg)
 
 
-### Video Demontration
+### Video Demonstration
 
 https://user-images.githubusercontent.com/68120268/133386844-8fb036ba-e2fe-4284-9e21-3a80e989a138.mp4
 
