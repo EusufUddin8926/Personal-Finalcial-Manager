@@ -21,6 +21,17 @@ https://user-images.githubusercontent.com/68120268/133386844-8fb036ba-e2fe-4284-
 
 ### Functions
  1. Google SignIn With Firebase
+ 2. Insert profile in Firebase
+ 3. Insert DenaPawna data in Firebase
+ 4. Retrive Dena Pawna Data
+ 5. Real Time calculation between Firebase Data
+ 6. Add Contract From User Contract
+ 7. RealTime DashBoard
+ 8. Update Data
+ 9. Delete Data
+ 10. Firebase Search
+ 11. Insert image in Firebase Storage
+ 12. Add Drive link in WebView
 
 
 
